@@ -46,7 +46,3 @@ for (let i =0; i < classe.length; i++){
         console.log(classe[i].prenom)
     }
 }
-
-
-
-
