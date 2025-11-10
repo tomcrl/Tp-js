@@ -46,3 +46,29 @@ for (let i =0; i < classe.length; i++){
         console.log(classe[i].prenom)
     }
 }
+function saluer(prenom) {
+    const message = "Bonjour " + prenom;
+    return message;
+}
+
+const salutationPourAlice = saluer("Alice");
+console.log(salutationPourAlice);
+const addition = (a, b) => a + b;
+console.log(addition(10, 5))
+
+//function estMajeur(age) {
+ //   return age >= 18;
+//}
+const estMajeur = age => age >= 18;
+
+function calculerMoyenne(tableauDeNotes) {
+    let somme = 0; 
+    for (let i = 0; i < tableauDeNotes.length; i++) {
+        somme += tableauDeNotes[i]; 
+    }
+    let moyenne = somme / tableauDeNotes.length;
+
+    return moyenne; 
+}
+let somme = [12, 15, 18, 10, 14];
+console.log(calculerMoyenne(somme)); 
